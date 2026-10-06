@@ -8,7 +8,7 @@
 <script>
   (function () {
     var t; try { t = localStorage.getItem('theme'); } catch (e) {}
-    if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'dark';
     document.documentElement.dataset.theme = t;
   })();
 </script>
